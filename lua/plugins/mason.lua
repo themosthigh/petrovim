@@ -20,7 +20,7 @@ return {
       automatic_enabled = true,
       automatic_installation = true,
       -- preload any lsp servers you want to use here
-      ensure_installed = { "lua_ls" },
+      ensure_installed = { "lua-language-server" },
     },
   },
 }

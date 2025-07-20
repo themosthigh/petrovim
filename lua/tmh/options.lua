@@ -1,4 +1,4 @@
-local icons = require("builtin.ui.icons")
+local icons = require("builtin.icons")
 
 local options = {
   -- numberline
@@ -37,7 +37,7 @@ local options = {
   writebackup = false,
   ignorecase = true,
   spell = true,
-  spelllang = "en_us,en_gb,la",
+  spelllang = "en_us,en_gb",
   spelloptions = "camel",
 
   --search
