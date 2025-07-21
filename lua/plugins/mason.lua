@@ -10,17 +10,19 @@ return {
   -- Mason lspconfig
   {
     "mason-org/mason-lspconfig.nvim",
-    lazy = true,
-    event = "User FileOpened",
     dependencies = {
       { "mason-org/mason.nvim", opts = {} },
       "neovim/nvim-lspconfig",
     },
     opts = {
       automatic_enabled = true,
-      automatic_installation = true,
+      automatic_intallation = true,
       -- preload any lsp servers you want to use here
-      ensure_installed = { "lua-language-server" },
-    },
+      ensure_installed = {
+        "lua_ls",
+        "intelephense", -- PHP
+        -- "rust_analyzer", -- rust
+      },
+    }
   },
 }
