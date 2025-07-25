@@ -1,4 +1,4 @@
-local colorscheme = "nordic"
+local colorscheme = "kanagawa"
 
 local ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 vim.o.background = "dark" -- or "light" for light mode

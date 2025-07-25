@@ -1,1 +1,1 @@
-require('tmh') -- intialise user configurations
+require('user') -- intialise user configurations

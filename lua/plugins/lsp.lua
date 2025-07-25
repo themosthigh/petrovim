@@ -4,8 +4,27 @@ return {
   {
     "neovim/nvim-lspconfig",
     config = function()
-      ---@diagnostic disable-next-line: different-requires
-      require("lspconfig").lua_ls.setup({})
+      -- local lspconfig = require("lspconfig")
+      -- Enable specific servers here
+      -- lspconfig.lua_ls.setup {}
+      -- lspconfig.intellephense.setup {}
+      -- lspconfig.biome.setup {}
     end,
   },
+
+
+  -- Code actions
+  {
+    "rachartier/tiny-code-action.nvim",
+    dependencies = {
+      { "nvim-lua/plenary.nvim" },
+      { "folke/snacks.nvim",    opts = { terminal = {} } }
+    },
+    event = "LspAttach",
+    opts = {
+      picker = {
+        "snacks"
+      }
+    }
+  }
 }
