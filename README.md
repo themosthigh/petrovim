@@ -1,3 +1,6 @@
+<img width="2660" height="1702" alt="image" src="https://github.com/user-attachments/assets/330822a3-d952-4541-a267-1fefb5601638" />
+
+
 # PETROVIM
 
 Peter's Neovim config with support for :
