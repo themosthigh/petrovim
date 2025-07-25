@@ -10,17 +10,9 @@ return {
       -- AUTOPAIRS
       require('mini.pairs').setup()
 
-      -- COMPLETIONS
-      -- require("mini.completion").setup()
 
+      -- Icons by MINI
       require("mini.icons").setup()
-
-      -- NOTIFICATIONS
-      -- require("mini.notify").setup()
-
-
-      -- SURROUND
-      -- require("mini.surround").setup()
     end,
   },
 }

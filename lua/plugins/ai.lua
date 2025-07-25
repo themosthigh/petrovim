@@ -9,7 +9,6 @@ return {
           accept_word = "<C-j>",
         },
       })
-      require("supermaven-nvim.api").use_free_version()
     end
   },
 }
