@@ -18,11 +18,7 @@ return {
       automatic_enabled = true,
       automatic_intallation = true,
       -- preload any lsp servers you want to use here
-      ensure_installed = {
-        "lua_ls",
-        "intelephense", -- PHP
-        -- "rust_analyzer", -- rust
-      },
+      ensure_installed = require("config.language-tools").ensure_installed,
     }
   },
 }
