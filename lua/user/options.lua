@@ -96,3 +96,16 @@ if vim.g.neovide then
   vim.g.transparency = 0.9
   vim.g.neovide_background_color = "#1e1e2e" .. alpha()
 end
+
+-- fancy diff element
+vim.opt.fillchars:append { diff = "╱" }
+
+-- use  gray theme for deleted sections
+vim.api.nvim_create_autocmd("ColorScheme", {
+  callback = function()
+    vim.api.nvim_set_hl(0, "DiffDelete", { fg = "GRAY", bg = "NONE", ctermfg = 250, ctermbg = "NONE" })
+  end,
+})
+
+-- permanently get rid of Press Enter to continue message (v0.12)
+require('vim._core.ui2').enable({})
